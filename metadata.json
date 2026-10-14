@@ -1,0 +1,6 @@
+{
+  "name": "CampusFind",
+  "description": "Smart Campus Lost & Found Platform — Report lost belongings, register found items, discover explainable potential matches, verify ownership claims, and track safe campus recovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

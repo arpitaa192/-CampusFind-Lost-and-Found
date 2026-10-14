@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --cf-primary: #0F172A;
+  --cf-primary-navy: #1E3A8A;
+  --cf-secondary: #2563EB;
+  --cf-bg: #F8FAFC;
+  --cf-surface: #FFFFFF;
+  --cf-success: #15803D;
+  --cf-warning: #B45309;
+  --cf-error: #B91C1C;
+  --cf-text: #0F172A;
+  --cf-text-muted: #475569;
+  --cf-border: #E2E8F0;
+
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--cf-bg);
+    color: var(--cf-text);
+    line-height: 1.55;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.balance-text {
+  text-wrap: balance;
+}
+
+/* Reduced motion accessibility compliance */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
